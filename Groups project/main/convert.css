@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header
+{
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.logo--block
+{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.btnHeader--block
+{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+.btn--header, .avt
+{
+    border: none;
+    outline: none;
+}
+.avt
+{
+    font-size: 1em;
+}
+
+
+/* AYUR*/
+
+
+
+.main{
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    background-color: #be3455;
+    /* background: linear-gradient(105deg, rgba(255,225,2,1) 0%, rgba(255,225,2,1) 59%, rgba(233,206,6,1) 59%, rgba(243,218,31,1) 60%, rgba(243,218,31,1) 100%); */
+    border-radius: 10px;
+}
+
+.main__give, .main__take{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    align-content: flex-start;
+}
+
+.txt{
+    width: 450px;
+    margin-left: 50px;
+    border: 1px solid black;
+    height: 40px;
+}
+
+.rub{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit{
+    background: rgba(0, 0, 0, 0.578);
+    color: white;
+    border-radius: 6px;
+}
+
+.submit:hover{
+    background: black;
+}
+
+.give{
+    height: 350px;  
+}
+
+.take{
+    height: 400px;
+}
+
+.give, .take{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 450px;
+    border: 1px solid black;
+}
+
+/* (ОТДАТЬ) Блок фильтра валюты */
+
+.give__valute, .give__email, .take__valute, .take__number, .take__fullName, .take__qiwi{
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+}
+
+.give__warning, .take__warning{
+    width: 100%;
+    
+}
+
+.give__valute, .take__valute{
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px;
+}
+
+.give__valute-button, .typeOfValute-button, .take__valute-button{ 
+    width: 20%;
+    cursor: pointer;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: white;
+}
+.give__valute-button:hover, .typeOfValute-button:hover, .take__valute-button:hover{
+    background: #7e2439;
+    color: white;
+    border-radius: 6px;
+}
+
+
+
+
+.give__valute-list, .typeOfValute-list-bitcoin, 
+.typeOfValute-list-tether, 
+.typeOfValute-list-ethereum, .typeOfValute-list-litecoin, .take__valute-list{
+    display: none;
+
+    position: absolute;
+    top: 110px;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(176,198,225,0.6);
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    z-index: 1;
+}
+
+.give__valute-list, .take__valute-list{
+    width: 100%; 
+    left: 0;
+}
+
+.typeOfValute-list-bitcoin, .typeOfValute-list-tether, 
+.typeOfValute-list-ethereum, .typeOfValute-list-litecoin{
+    right: 0;
+}
+
+
+
+
+.give__valute-list--visible, .typeOfValute-list--visible, .take__valute-list--visible{
+    display: block;
+}
+
+.give__valute-list-item, .typeOfValute-list-item, .take__valute-list-item{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #7e2439;
+    border-bottom: 0px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+.give__valute-list-item:first-child, .typeOfValute-list-item:first-child , .take__valute-list-item:first-child{
+    border-radius: 6px 6px 0 0;
+}
+
+.give__valute-list-item:last-child, .typeOfValute-list-item:last-child,.take__valute-list-item:last-child{
+    border-radius: 0 0 6px 6px;
+    border-bottom: 1px solid #7e2439;
+}
+.give__valute-list-item:hover, .typeOfValute-list-item:hover, .take__valute-list-item:hover{
+    background: #7e2439;
+    color: white;
+}
+
+
+
+
+.give__valute-inp, .take__valute-inp{
+    width: 45%;
+    border-right: 0px;
+    border-left: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+    outline: none;
+}
+
+.typeOfValute{
+    width: 20%;
+    cursor: pointer;
+}
+.typeOfValute__input-hidden{
+    display: none;
+}
+
+.give__email, .take__number, .take__fullName{
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.take__qiwi{
+    height: 64px;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.take__qiwi--visible{
+    display: flex;
+}
+
+.give__warning-text, .take__warning-text{
+    background: white;
+    margin: 0;
+    padding: 5px;
+    border-radius: 6px;
+    display: flex;
+}
+
+.give__valute__input-hidden, .take__valute__input-hidden{
+    display: none;
+}
+
+
+
+
+/* Блок ввода электронной почты */
+
+
+.give__email-input, .take__number-input, .take__fullName-input, .take__qiwi-input{
+    border: 1px solid black;
+    /* border: none; */
+    outline: none;
+    font-size: 20px;
+    height: 80%;
+    width: 80%;
+}
+
+.take__number--nonVisible{
+    display: none;
+}
+
+
+/* Блок реверса */
+
+.middle{
+    border: 1px solid black;
+    width: 100px;
+}
+
+
+
+
+
+/* (ПОЛУЧИТЬ) Блок фильтра валюты  */
+
+.take{
+    border: 1px solid black;
+}
+
+
+
+
+/* Pasha*/
+.info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 125px;
+}
+
+.block1 , .block2 {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.block2 {
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    background: linear-gradient(100deg, #445fb6 45%, #1e4775 55%);
+    justify-content: space-evenly;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.bestChPic {
+    width: 225px;
+    margin: 10px;
+}
+
+.footer-txt {
+    margin: 5px;
+}
+
+.logo {
+    margin: 10px 10px;
+    width: 40px;
+}
+
+.footer-right_links a {
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+    margin-right: 300px;
+    font-size: 18px;
+}
+
+.footer-right_links a:hover {
+    color: rgb(188, 179, 179);
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.footer-right_links {
+    margin: 10px;
+}
