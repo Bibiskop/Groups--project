@@ -7,7 +7,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="logo--block" onclick="location='/main/Form.html'">FAST CHANGE</div>
+            <div class="logo--block" onclick="location='/main/Form.html'" style="cursor:pointer;">FAST CHANGE</div>
             <div class="btnHeader--block">
                 <button class="btn--header" onclick="location='/Parteri/Partneri.html'" style="cursor:pointer;">ПАРТНЁРАМ</button>
                 <button class="btn--header" onclick="location='/News/index.html'" style="cursor:pointer;">НОВОСТИ</button>
@@ -118,5 +118,18 @@
                 </div>
             </div>
         </div>
+
+
+        <button class="open-button" onclick="openForm()">Чат</button>
+    <div class="chat-popup" id="myForm">
+      <form action="../action_page.php" class="form-container">
+        <h1>Чат с поддержкой</h1>
+        <label for="msg"><b>Ваше сообщение</b></label>
+        <textarea placeholder="Писать тут" name="msg" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+      </form>
+    </div>
+    <script src="/Q&A/chat.js"></script>
     </body>
 </html>
