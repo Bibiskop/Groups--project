@@ -53,12 +53,14 @@ header
     display: flex;
     width: 1200px;
     height: 500px;
-    background-color: #be3455;
+    background: linear-gradient(100deg, #BE3455 45%, #7e2439 55%);
+    border-radius: 10PX;
     /* background: linear-gradient(105deg, rgba(255,225,2,1) 0%, rgba(255,225,2,1) 59%, rgba(233,206,6,1) 59%, rgba(243,218,31,1) 60%, rgba(243,218,31,1) 100%); */
-    border-radius: 10px;
+    
 }
 
 .main__give, .main__take{
+    border-radius: 50%;
     display: flex;
     flex-wrap: wrap;
     width: 550px;
@@ -66,9 +68,10 @@ header
 }
 
 .txt{
+    font-size: 1.9vh;
+    color: white;
     width: 450px;
     margin-left: 50px;
-    border: 1px solid black;
     height: 40px;
 }
 
@@ -80,13 +83,21 @@ header
 }
 
 .submit{
-    background: rgba(0, 0, 0, 0.578);
-    color: white;
+    border: none;
+    font-size: 1.5vh;
+    font-weight: bolder;
+    width: 30%;
+    background: rgb(255, 255, 255);
+    color: #BE3455;
     border-radius: 6px;
 }
 
 .submit:hover{
-    background: black;
+    box-shadow: rgb(255, 255, 255) 3px 3px;
+    border-top: white solid 1px;
+    border-left: white solid 1px;
+    background: #BE3455;
+    color: white;
 }
 
 .give{
@@ -103,7 +114,7 @@ header
     margin-right: 50px;
     margin-left: 50px;
     width: 450px;
-    border: 1px solid black;
+    justify-content: flex-end;
 }
 
 /* (ОТДАТЬ) Блок фильтра валюты */
@@ -211,10 +222,10 @@ header
 .give__valute-inp, .take__valute-inp{
     width: 45%;
     border-right: 0px;
-    border-left: 1px solid black;
     border-top: 0px;
     border-bottom: 0px;
     outline: none;
+    padding: 3%;
 }
 
 .typeOfValute{
@@ -261,9 +272,8 @@ header
 
 
 .give__email-input, .take__number-input, .take__fullName-input, .take__qiwi-input{
-    border: 1px solid black;
-    /* border: none; */
     outline: none;
+    border: none;
     font-size: 20px;
     height: 80%;
     width: 80%;
@@ -277,7 +287,7 @@ header
 /* Блок реверса */
 
 .middle{
-    border: 1px solid black;
+    background: linear-gradient(100deg, #BE3455 45%, #7e2439 55%);
     width: 100px;
 }
 
@@ -287,9 +297,6 @@ header
 
 /* (ПОЛУЧИТЬ) Блок фильтра валюты  */
 
-.take{
-    border: 1px solid black;
-}
 
 
 
@@ -321,8 +328,9 @@ header
 }
 
 .footer {
+    border-radius: 15px;
     display: flex;
-    background: linear-gradient(100deg, #445fb6 45%, #1e4775 55%);
+    background: linear-gradient(100deg, #BE3455 45%, #7e2439 55%);
     justify-content: space-evenly;
 }
 
