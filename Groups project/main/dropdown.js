@@ -180,7 +180,7 @@ function changeWarning(){
     }
     
     if(typeOfValuteInpHidden.value == "solThr"){
-        giveWarn.style.background = '#be3455';
+        giveWarn.style.background = 'rgb(115, 0, 255)';
         giveWarnTxt.style.display = 'none';
     }
     

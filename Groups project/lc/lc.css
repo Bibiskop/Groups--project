@@ -9,15 +9,29 @@
 }
 
 
+body
+{
+    background-color: rgb(115, 200, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header
 {
     padding-bottom: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.logo--img
+{
+    width: 200px;
+    height: 260px;
 }
 .logo--block
 {
@@ -30,27 +44,48 @@ header
     justify-content: space-around;
     width: 40%;
 }
-.btn--header, .avt
+.btn--header
 {
-    border: none;
+    color: rgb(246, 246, 246);
+    border: rgb(50, 0, 90) solid 2px;
+    background-color: rgb(115, 0, 255);
+    width: 20vh;
+    height: 4vh;
     outline: none;
+    font-size: 0.9em;
 }
 .avt
 {
-    font-size: 1em;
+    color: rgb(246, 246, 246);
+    border:rgb(50, 0, 90) solid 3px;
+    background-color: rgb(115, 0, 255);
+    height: 4vh;
+    font-size: 1.3em;
+    border-radius: 1vh;
+}
+
+.btn--headerFirst
+{
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+.btn--headerLast
+{
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
 }
 
 ::-webkit-scrollbar 
 {
     width: 0px;
 }
-body
+/*body
 {
     background: #F7F6F6;
     padding-right: 400px;
     padding-left: 400px;
     height: 150vh;
-}
+}*/
 .lc, .moi
 {
     color: #48423B;
@@ -91,7 +126,7 @@ body
     flex-direction: column;
     justify-content: space-around;
     width: 95%;
-    border-radius: 5%;
+    border-radius: 50px;
     align-items: center;
     height: 40vh;
 }
@@ -155,18 +190,18 @@ body
     font-weight: 500;
     color: white;
     height: 40px;
-    border-radius: 15%;
-    background-color: #be264c;
+    border-radius: 15px;
+    background-color: rgb(115, 0, 255);
 }
 .creat--btn:hover
 {
-    background-color: #851631;
+    background-color: rgb(50, 0, 90);
 }
 
 
 * {box-sizing: border-box;}
     .open-button {
-      background-color: #BE3455;
+      background-color: rgb(115, 0, 255);
       color: rgb(14, 1, 1);
       padding: 16px 20px;
       border: none;
@@ -187,7 +222,7 @@ body
     .form-container {
       max-width: 300px;
       padding: 10px;
-      background-color: #BE3455;
+      background-color: rgb(115, 0, 255);
     }
     .form-container textarea {
       width: 100%;

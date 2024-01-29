@@ -6,15 +6,29 @@
     scroll-behavior: smooth;
 }
 
-.header
+body
+{
+    background-color: rgb(115, 200, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header
 {
     padding-bottom: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.logo--img
+{
+    width: 200px;
+    height: 260px;
 }
 .logo--block
 {
@@ -25,16 +39,37 @@
 {
     display: flex;
     justify-content: space-around;
-    width: 25%;
+    width: 40%;
 }
-.btn--header, .avt
+.btn--header
 {
-    border: none;
+    color: rgb(246, 246, 246);
+    border: rgb(50, 0, 90) solid 2px;
+    background-color: rgb(115, 0, 255);
+    width: 20vh;
+    height: 4vh;
     outline: none;
+    font-size: 0.9em;
 }
 .avt
 {
-    font-size: 1em;
+    color: rgb(246, 246, 246);
+    border:rgb(50, 0, 90) solid 3px;
+    background-color: rgb(115, 0, 255);
+    height: 4vh;
+    font-size: 1.3em;
+    border-radius: 1vh;
+}
+
+.btn--headerFirst
+{
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+.btn--headerLast
+{
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
 }
 
 *
@@ -43,12 +78,12 @@
     padding: 0;
 }
 body
-{
+/*{
     color: rgba(0, 0, 0, 0.87);
     margin: 0;
     background-color: rgb(240, 235, 235);
     font-family: Calibri;
-}
+}*/
 .news_header
 {
     margin-left: 17%;
@@ -79,7 +114,7 @@ body
     margin-top: 5px;
 
     font-size: 35px;
-    color: #BE3455;
+    color: rgb(115, 0, 255);
 }
 .news_content
 {
@@ -93,7 +128,7 @@ body
    width: 60%;
    
    font-size: 20px;
-   border: 1px solid #BE3455;
+   border: 1px solid rgb(115, 0, 255);
    border-radius: 10px;
 }
 .content_description
@@ -119,7 +154,7 @@ body
 }
 .back_button:hover 
 {
-    background-color: #BE3455;
+    background-color: rgb(115, 0, 255);
     color: white;
 
     transition: 0.1s;
@@ -127,11 +162,11 @@ body
 .back_button_arrow
 {
     padding: 4px;
-    border: 1px solid #BE3455;
+    border: 1px solid rgb(115, 0, 255);
     border-radius: 5px;
 
     color: white;
-    background-color: #BE3455;
+    background-color: rgb(115, 0, 255);
 }
 .back_button_name
 {
@@ -141,7 +176,7 @@ body
 
 * {box-sizing: border-box;}
     .open-button {
-      background-color: #BE3455;
+      background-color: rgb(115, 0, 255);
       color: rgb(14, 1, 1);
       padding: 16px 20px;
       border: none;
@@ -162,7 +197,7 @@ body
     .form-container {
       max-width: 300px;
       padding: 10px;
-      background-color: #BE3455;
+      background-color: rgb(115, 0, 255);
     }
     .form-container textarea {
       width: 100%;

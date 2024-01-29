@@ -8,6 +8,7 @@
 
 body
 {
+    background-color: rgb(115, 200, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +20,15 @@ header
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.logo--img
+{
+    width: 200px;
+    height: 260px;
 }
 .logo--block
 {
@@ -32,18 +39,38 @@ header
 {
     display: flex;
     justify-content: space-around;
-    width: 25%;
+    width: 40%;
 }
-.btn--header, .avt
+.btn--header
 {
-    border: none;
+    color: rgb(246, 246, 246);
+    border: rgb(50, 0, 90) solid 2px;
+    background-color: rgb(115, 0, 255);
+    width: 20vh;
+    height: 4vh;
     outline: none;
+    font-size: 0.9em;
 }
 .avt
 {
-    font-size: 1em;
+    color: rgb(246, 246, 246);
+    border:rgb(50, 0, 90) solid 3px;
+    background-color: rgb(115, 0, 255);
+    height: 4vh;
+    font-size: 1.3em;
+    border-radius: 1vh;
 }
 
+.btn--headerFirst
+{
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+.btn--headerLast
+{
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
 
 /* AYUR*/
 
@@ -53,7 +80,7 @@ header
     display: flex;
     width: 1200px;
     height: 500px;
-    background: linear-gradient(100deg, #BE3455 45%, #7e2439 55%);
+    background: linear-gradient(100deg, rgb(115, 0, 255) 50%, rgb(50, 0, 90) 50%);
     border-radius: 10PX;
     /* background: linear-gradient(105deg, rgba(255,225,2,1) 0%, rgba(255,225,2,1) 59%, rgba(233,206,6,1) 59%, rgba(243,218,31,1) 60%, rgba(243,218,31,1) 100%); */
     
@@ -88,7 +115,7 @@ header
     font-weight: bolder;
     width: 30%;
     background: rgb(255, 255, 255);
-    color: #BE3455;
+    color: rgb(115, 0, 255);
     border-radius: 6px;
 }
 
@@ -96,7 +123,7 @@ header
     box-shadow: rgb(255, 255, 255) 3px 3px;
     border-top: white solid 1px;
     border-left: white solid 1px;
-    background: #BE3455;
+    background: rgb(115, 0, 255);
     color: white;
 }
 
@@ -149,7 +176,7 @@ header
     background: white;
 }
 .give__valute-button:hover, .typeOfValute-button:hover, .take__valute-button:hover{
-    background: #7e2439;
+    background: rgb(50, 0, 90);
     color: white;
     border-radius: 6px;
 }
@@ -198,7 +225,7 @@ header
 .give__valute-list-item, .typeOfValute-list-item, .take__valute-list-item{
     margin: 0;
     padding: 0;
-    border: 1px solid #7e2439;
+    border: 1px solid rgb(115, 0, 255);
     border-bottom: 0px;
     padding: 13px 20px;
     cursor: pointer;
@@ -209,10 +236,10 @@ header
 
 .give__valute-list-item:last-child, .typeOfValute-list-item:last-child,.take__valute-list-item:last-child{
     border-radius: 0 0 6px 6px;
-    border-bottom: 1px solid #7e2439;
+    border-bottom: 1px solid rgb(115, 0, 255);
 }
 .give__valute-list-item:hover, .typeOfValute-list-item:hover, .take__valute-list-item:hover{
-    background: #7e2439;
+    background: rgb(50, 0, 90);
     color: white;
 }
 
@@ -287,7 +314,7 @@ header
 /* Блок реверса */
 
 .middle{
-    background: linear-gradient(100deg, #BE3455 45%, #7e2439 55%);
+    background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
     width: 100px;
 }
 
@@ -330,7 +357,7 @@ header
 .footer {
     border-radius: 15px;
     display: flex;
-    background: linear-gradient(100deg, #BE3455 45%, #7e2439 55%);
+    background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
     justify-content: space-evenly;
 }
 
@@ -380,7 +407,7 @@ header
 
 * {box-sizing: border-box;}
     .open-button {
-      background-color: #BE3455;
+      background-color: rgb(115, 0, 255);
       color: rgb(14, 1, 1);
       padding: 16px 20px;
       border: none;
@@ -401,7 +428,7 @@ header
     .form-container {
       max-width: 300px;
       padding: 10px;
-      background-color: #BE3455;
+      background-color: rgb(115, 0, 255);
     }
     .form-container textarea {
       width: 100%;
