@@ -2,9 +2,15 @@
 
 *
 {
-  box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar 
+{
+    width: 0px;
 }
 
 body
@@ -17,7 +23,6 @@ body
 
 header
 {
-    padding-bottom: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -28,13 +33,13 @@ header
 
 .logo--img
 {
-    width: 200px;
-    height: 260px;
+    width: auto;
+    height: auto;
 }
 .logo--block
 {
-    font-size: 2em;
-    font-weight: bolder;
+    width: 70vh;
+    height: 35vh;
 }
 .btnHeader--block
 {
@@ -102,23 +107,13 @@ header
     font-weight: bold;
     text-transform: uppercase;
   }
-  @media (min-width:0px) and (max-width:599.95px) {
-    .partners__text {
-      padding: 20px 0px 10px 0px;
-      font-size: 24px;
-    }
-  }
+
   .main__information {
     box-shadow:  0px 8px 16px rgba(0, 0, 0, 0.03);
     border-radius: 10px;
     background-color: #fff;
   }
-  @media (min-width:0px) and (max-width:599.95px) {
-    .main__information {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-  }
+ 
   .about {
     color: #48423B;
     padding: 40px;
@@ -130,11 +125,7 @@ header
     background: url(sprites/partnerBack.svg);
     background-size: auto 100%;
   }
-  @media (min-width:0px) and (max-width:599.95px) {
-    .offers {
-      background-size: cover;
-    }
-  }  
+  
   .offers__interest {
     display: table;
     text-align: center;
@@ -237,7 +228,79 @@ header
     text-transform: uppercase;
   }
 
-  * {box-sizing: border-box;}
+/* Pasha*/
+.info {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 125px;
+}
+
+.block1 , .block2 {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.block2 {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  border-radius: 15px;
+  display: flex;
+  background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
+  justify-content: space-evenly;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.bestChPic {
+  width: 225px;
+  margin: 10px;
+}
+
+.footer-txt {
+  margin: 5px;
+}
+
+.logo {
+  margin: 10px 10px;
+  width: 40px;
+}
+
+.footer-right_links a {
+  text-decoration: none;
+  color: rgb(235, 226, 226);
+  margin-right: 300px;
+  font-size: 18px;
+}
+
+.footer-right_links a:hover {
+  color: rgb(188, 179, 179);
+  transition: .3s;
+  text-decoration: underline;
+}
+
+.footer-right_links {
+  margin: 10px;
+}
+
   .open-button {
     background-color: #BE3455;
     color: rgb(14, 1, 1);

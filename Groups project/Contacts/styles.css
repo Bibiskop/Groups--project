@@ -7,7 +7,10 @@
     padding: 0;
 }
 
-
+::-webkit-scrollbar 
+{
+    width: 0px;
+}
 
 body
 {
@@ -19,7 +22,6 @@ body
 
 header
 {
-    padding-bottom: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,13 +32,13 @@ header
 
 .logo--img
 {
-    width: 200px;
-    height: 260px;
+    width: auto;
+    height: auto;
 }
 .logo--block
 {
-    font-size: 2em;
-    font-weight: bolder;
+    width: 70vh;
+    height: 35vh;
 }
 .btnHeader--block
 {
@@ -94,9 +96,6 @@ header
 }
 .title
 {
-    margin-top: 150px;
-    margin-left: 295px;
-
     font-size: 55px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
@@ -104,11 +103,9 @@ header
 .info_widow
 {
     border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 15%;
     width: 60%;
     background: linear-gradient(25deg, white, rgb(115, 0, 255));
-    padding: 10px;
+    margin: 2% 0 2% 0;
 }
 .socials
 {
@@ -188,7 +185,80 @@ header
 }
 
 
-* {box-sizing: border-box;}
+/* Pasha*/
+.info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 125px;
+}
+
+.block1 , .block2 {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.block2 {
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    border-radius: 15px;
+    display: flex;
+    background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
+    justify-content: space-evenly;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.bestChPic {
+    width: 225px;
+    margin: 10px;
+}
+
+.footer-txt {
+    margin: 5px;
+}
+
+.logo {
+    margin: 10px 10px;
+    width: 40px;
+}
+
+.footer-right_links a {
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+    margin-right: 300px;
+    font-size: 18px;
+}
+
+.footer-right_links a:hover {
+    color: rgb(188, 179, 179);
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.footer-right_links {
+    margin: 10px;
+}
+
+
     .open-button {
       background-color: rgb(115, 0, 255);
       color: rgb(14, 1, 1);
