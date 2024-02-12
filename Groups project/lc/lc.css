@@ -53,16 +53,23 @@ header
     height: 4vh;
     outline: none;
     font-size: 0.9em;
+    transition: 0.3s;
+}
+.btn--header:hover , .avt:hover
+{
+    color: rgb(115, 0, 255);
+    background-color: white;
+    border-color: rgb(115, 0, 255);
 }
 .avt
 {
     color: rgb(246, 246, 246);
-    border: rgb(50, 0, 90) solid 3px;
+    border:rgb(50, 0, 90) solid 3px;
     background-color: rgb(115, 0, 255);
     height: 4vh;
-    width: 13.2vh;
     font-size: 1.3em;
     border-radius: 1vh;
+    transition: 0.3s;
 }
 
 .btn--headerFirst
