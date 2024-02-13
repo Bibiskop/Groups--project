@@ -344,6 +344,7 @@ header
 
 /* Pasha*/
 .info {
+    flex: 1 0 auto;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -369,6 +370,7 @@ header
 }
 
 .footer {
+    flex: 0 0 auto;
     border-radius: 15px;
     display: flex;
     background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
