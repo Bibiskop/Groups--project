@@ -2,17 +2,101 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #299986 url('/img/img--back/1627190118_13-kartinkin-com-p-serii-fon-volni-krasivo-13.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
     margin: 0;
 	padding: 0;
 }
+
+body {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::-webkit-scrollbar 
+{
+    width: 0px;
+}
+
+
+
+/* HEADER */
+
+
+
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.logo--img
+{
+    width: auto;
+    height: auto;
+}
+.logo--block
+{
+    width: 70vh;
+    height: 35vh;
+}
+.btnHeader--block
+{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.btn--header
+{
+    color: rgb(246, 246, 246);
+    border: rgb(50, 0, 90) solid 2px;
+    background-color: rgb(115, 0, 255);
+    width: 20vh;
+    height: 4vh;
+    outline: none;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+.btn--header:hover , .avt:hover
+{
+    color: rgb(115, 0, 255);
+    background-color: white;
+    border-color: rgb(115, 0, 255);
+}
+.avt
+{
+    color: rgb(246, 246, 246);
+    border:rgb(50, 0, 90) solid 3px;
+    background-color: rgb(115, 0, 255);
+    height: 4vh;
+    font-size: 1.3em;
+    border-radius: 1vh;
+    transition: 0.3s;
+}
+
+.btn--headerFirst
+{
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+.btn--headerLast
+{
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+
+
+/* РЕГИСТРАЦИЯ */
+
+
+
 .SignIn--SignUp
 {
     font-size: 2vh;
@@ -20,18 +104,17 @@ body {
 }
 .SignIn--SignUp:hover
 {
-    color: #299986;
+    color: rgb(115, 0, 255);
 }
 .container--flex
 {
+    margin: 1% 0 2% 0;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.void-block
-{
-    height: 20%;
-}
+
 .headline--sign {
     font-weight: bold;
     margin: 0;
@@ -57,7 +140,6 @@ body {
 }
 
 .container {
-    
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
@@ -102,10 +184,10 @@ body {
     width: 100%;
 }
 
-button {
+.ghost {
     border-radius: 20px;
-    border: 1px solid #299986;
-    background: #299986;
+    border: 1px solid rgb(50, 0, 90);
+    background: rgb(50, 0, 90);
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -160,8 +242,8 @@ button.ghost {
 }
 
 .overlay {
-    background: #299986;
-    background: linear-gradient(to right, #299986, #299986) no-repeat 0 0 / cover;
+    background: rgb(115, 0, 255);
+    background: linear-gradient(to right, rgb(115, 0, 255), rgb(115, 0, 255)) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;
@@ -226,3 +308,117 @@ button.ghost {
 .container.right-panel-active .overlay-right {
     transform: translateY(20%);
 }
+
+
+
+/* FOOTER */
+
+
+
+.footer {
+    flex: 0 0 auto;
+    border-radius: 15px;
+    display: flex;
+    background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
+    justify-content: space-evenly;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.bestChPic {
+    width: 225px;
+    margin: 10px;
+}
+
+.footer-txt {
+    margin: 5px;
+}
+
+.logo {
+    margin: 10px 10px;
+    width: 40px;
+}
+
+.footer-right_links a {
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+    margin-right: 300px;
+    font-size: 18px;
+}
+
+.footer-right_links a:hover {
+    color: rgb(188, 179, 179);
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.footer-right_links {
+    margin: 10px;
+}
+
+
+
+/* CHAT */
+
+
+
+    .open-button {
+      background-color: rgb(115, 0, 255);
+      color: rgb(14, 1, 1);
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+    }
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    .form--container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: rgb(115, 0, 255);
+    }
+    .form--container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+    .form--container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    .form--container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    .form--container .cancel {
+      background-color: red;
+    }
+    .form--container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
