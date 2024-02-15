@@ -14,7 +14,7 @@
 
 body
 {
-    background-color: rgb(115, 200, 255);
+    background-color: rgb(243, 243, 243);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +116,7 @@ header
 .menu_title
 {
     font-size: 46px;
-    color: #48423b;
+    color: rgb(115, 0, 255);
 }
 .menu_buttons
 {
@@ -151,6 +151,7 @@ header
 }
 #main_questions_and_answers
 {
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     margin: 1% 17% 1% 17%;
@@ -287,6 +288,7 @@ padding-bottom: 5px;
 }
 
 .footer {
+    flex: 0 0 auto;
     border-radius: 15px;
     display: flex;
     background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);

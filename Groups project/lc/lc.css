@@ -10,7 +10,7 @@
 
 body
 {
-    background-color: rgb(115, 200, 255);
+    background-color: rgb(243, 243, 243);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,13 +88,7 @@ header
 {
     width: 0px;
 }
-/*body
-{
-    background: #F7F6F6;
-    padding-right: 400px;
-    padding-left: 400px;
-    height: 150vh;
-}*/
+
 .lc, .moi
 {
     color: #48423B;
@@ -117,6 +111,7 @@ header
 }
 .zayvki
 {
+    flex: 1 0 auto;
     margin: 1% 0 1% 0;
     width: 100%;
     display: flex;
@@ -237,6 +232,7 @@ header
 }
 
 .footer {
+    flex: 0 0 auto;
     border-radius: 15px;
     display: flex;
     background: linear-gradient(100deg, rgb(115, 0, 255) 45%, rgb(50, 0, 90) 55%);
