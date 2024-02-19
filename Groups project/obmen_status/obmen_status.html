@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/obmen_status/obmen_status.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <!-- <div class="logo--block" onclick="location='/main/Form.html'" style="cursor:pointer;"><img class="logo--img" src="/main/imgs/logo.png" alt="logo"></div> -->
+        <div class="btnHeader--block">
+            <button class="btn--header btn--headerFirst" onclick="location='/Parteri/Partneri.html'" style="cursor:pointer;">ПАРТНЁРАМ</button>
+            <button class="btn--header" onclick="location='/News/index.html'" style="cursor:pointer;">НОВОСТИ</button>
+            <button class="btn--header" onclick="location='/Q&A/idex.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
+            <button class="btn--header btn--headerLast" onclick="location='/Contacts/index.html'" style="cursor:pointer;">КОНТАКТЫ</button>
+        </div>
+        <div class="avt--block"><button class="avt" onclick="location='/sign/sign.html'" style="cursor:pointer;">Авторизация</button></div>
+</header>
+
+
+<div class="container_obmen">
+    <div>Заявка #</div>
+    <div>КУРС ОБМЕНА:</div>
+    <div class="container_obmen--flex">
+        <div class="container_obmen--flex--block">
+            <div>что-то будет</div>
+            <div>Необходимо отправить</div>
+            <div>Предварительная заявка</div>
+            <div>Статус</div>
+        </div>
+        <div class="container_obmen--flex--block">
+            <div>что-то будет</div>
+            <div>Будет получено</div>
+            <div>Служба поддержки</div>
+            <div>По вопросам</div>
+        </div>
+    </div>
+    <div><span></span></div>
+    <div>
+        <div>Для завершения создания заявки необходимо</div>
+        <div>1. Осуществите перевод на сумму сколько-то по следующим реквезитам:</div>
+        <div>0x58b2b0DE5cb94671F6f954B57D4F6bc6142D093e</div>
+        <div>2. После списания средств со счета нажмите кнопку <a href="">"Я оплатил"</a></div>
+    </div>
+    <div><button>Я оплатил</button></div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-left">
+        <a href="#">
+            <img class="bestChPic" src="/main/imgs/BestChange.png" alt="BestChPic">
+        </a>
+        <span>
+            <p class="footer-txt">HIGH-QUALITY AND FAST 24/7 CURRENCY EXCHANGE SERVICE
+                <span><p class="footer-txt">© All rights reserved. Copyright © 2015 - 2023</p></span>
+            </p>
+        </span>
+        <br>
+        <p></p>
+    </div>
+    <div class="footer-right">
+        <div class="footer-right_links">
+            <a href="#">Contacts</a>
+        </div>
+        <div class="logos">
+            <a href="#">
+                <img class="logo" src="/main/imgs/telegramLogo.png" alt="TelegramLogoPic">
+            </a>
+            <a href="#">
+                <img class="logo" src="/main/imgs/vkLogo.png" alt="vkLogoPic">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<button class="open-button" onclick="openForm()">Чат</button>
+<div class="chat-popup" id="myForm">
+<form action="../action_page.php" class="form-container">
+<h1>Чат с поддержкой</h1>
+<label for="msg"><b>Ваше сообщение</b></label>
+<textarea placeholder="Писать тут" name="msg" required></textarea>
+<button type="submit" class="btn">Отправить</button>
+<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+</form>
+</div>
+<script src="/Q&A/chat.js"></script>
+</body>
+</html>
