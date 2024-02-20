@@ -87,6 +87,54 @@ header
 }
 
 
+
+.container_obmen
+{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1%;
+}
+
+.container_obmen--block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5%;
+    background-color: rgb(115, 0, 255);
+    border-radius: 10px;
+}
+
+.container_obmen--flex
+{
+    display: flex;
+    width: 100%;
+    padding-bottom: 1%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container_obmen--flex--block
+{
+    width: 15vw;
+}
+
+.container_obmen--text
+{
+    font-size: 1vw;
+    color:rgb(246, 246, 246);
+}
+
+.container_obmen--zagolovok
+{
+    font-size: 1vw;
+    color:rgb(246, 246, 246);
+}
+
 .footer {
     flex: 0 0 auto;
     border-radius: 15px;
