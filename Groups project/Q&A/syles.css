@@ -169,6 +169,9 @@ header
 
     background-color: white;
 }
+.title_question:active{
+    transition: 10s;
+}
 .question_logo
 {
     margin: 10px;
