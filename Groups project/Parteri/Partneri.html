@@ -1,24 +1,39 @@
 <html lang="ru-RU">
     <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="partneri.css">
     <link rel="stylesheet" href="addaptive.css">
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="/style/chat.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/header.css">
     <title>Партнерам</title>
     </head>
     <body>
+
+
+<!-- HEADER -->
+
+
         <header class="header">
             <!-- <div class="logo--block" onclick="location='/main/Form.html'" style="cursor:pointer;"><img class="logo--img" src="/main/imgs/logo.png" alt="logo"></div> -->
             <div class="btnHeader--block">
                 <button class="btn--header btn--headerFirst" onclick="location='/Parteri/Partneri.html'" style="cursor:pointer;">ПАРТНЁРАМ</button>
-                <button class="btn--header" onclick="location='/News/index.html'" style="cursor:pointer;">НОВОСТИ</button>
-                <button class="btn--header" onclick="location='/Q&A/idex.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
-                <button class="btn--header btn--headerLast" onclick="location='/Contacts/index.html'" style="cursor:pointer;">КОНТАКТЫ</button>
+                <button class="btn--header" onclick="location='/News/news_main.html'" style="cursor:pointer;">НОВОСТИ</button>
+                <button class="btn--header" onclick="location='/Q&A/q&a.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
+                <button class="btn--header btn--headerLast" onclick="location='/Contacts/contacts.html'" style="cursor:pointer;">КОНТАКТЫ</button>
             </div>
             <div class="avt--block"><button class="avt" onclick="location='/sign/sign.html'" style="cursor:pointer;">Авторизация</button></div>
         </header>
         
 
+<!-- LOGO -->
+
+
         <div class="logo--block" ><img class="logo--img" onclick="location='/main/Form.html'" style="cursor:pointer;" src="/main/imgs/logotip.svg" alt="logo"></div>
+
+
+<!-- PARNERI -->
 
         
         <div id="container">
@@ -115,6 +130,9 @@
         </div>
 
 
+<!-- FOOTER -->
+
+
         <div class="footer">
             <div class="footer-left">
                 <a href="#">
@@ -144,6 +162,9 @@
         </div>
 
 
+<!-- CHAT -->
+
+
         <button class="open-button" onclick="openForm()">Чат</button>
     <div class="chat-popup" id="myForm">
       <form action="../action_page.php" class="form-container">
@@ -154,6 +175,11 @@
         <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
+
+
+<!-- SCRIPTS -->
+
+
     <script src="/Q&A/chat.js"></script>
     </body>
 </html>

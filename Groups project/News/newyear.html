@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="NewsStyles.css">
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="/style/chat.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/header.css">
     <title>newyear</title>
 </head>
 <body>
+
+
+<!-- HEADER -->
+
+
     <header class="header">
         <!-- <div class="logo--block" onclick="location='/main/Form.html'" style="cursor:pointer;"><img class="logo--img" src="/main/imgs/logo.png" alt="logo"></div> -->
         <div class="btnHeader--block">
             <button class="btn--header btn--headerFirst" onclick="location='/Parteri/Partneri.html'" style="cursor:pointer;">ПАРТНЁРАМ</button>
-            <button class="btn--header" onclick="location='/News/index.html'" style="cursor:pointer;">НОВОСТИ</button>
-            <button class="btn--header" onclick="location='/Q&A/idex.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
-            <button class="btn--header btn--headerLast" onclick="location='/Contacts/index.html'" style="cursor:pointer;">КОНТАКТЫ</button>
+            <button class="btn--header" onclick="location='/News/news_main.html'" style="cursor:pointer;">НОВОСТИ</button>
+            <button class="btn--header" onclick="location='/Q&A/q&a.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
+            <button class="btn--header btn--headerLast" onclick="location='/Contacts/contacts.html'" style="cursor:pointer;">КОНТАКТЫ</button>
         </div>
         <div class="avt--block"><button class="avt" onclick="location='/sign/sign.html'" style="cursor:pointer;">Авторизация</button></div>
     </header>
 
 
+<!-- LOGO -->
+
+
     <div class="logo--block" ><img class="logo--img" onclick="location='/main/Form.html'" style="cursor:pointer;" src="/main/imgs/logotip.svg" alt="logo"></div>
 
+
+<!-- NEWYEAR -->
 
     
         <div class="news_header">
@@ -41,7 +55,7 @@
         Уважаемые клиенты, дорогие наши друзья! В этот Новый год хочется от всей души поблагодарить Вас за внимание к нам, интерес к тому, что мы делаем и, конечно, за Ваше бесконечное доверие! Поздравляем Вас с этим волшебным праздником и желаем Вам процветания в делах, благополучия в личной жизни и успешного завершения всех начатых дел! В связи с этим хотим Вас предупредить, что наш обменный сервис не будет работать с 18:00 31 декабря до 16:00 1 января 2021 года.
     </div>
     <div class="back_button_block">
-        <div class="back_button" onclick="location='index.html'" style="cursor: pointer">
+        <div class="back_button" onclick="location='news_main.html'" style="cursor: pointer">
             <div class="back_button_arrow">
                 ←
             </div>
@@ -50,6 +64,9 @@
             </div>
         </div>
     </div>
+
+
+<!-- FOOTER -->
 
 
     <div class="footer">
@@ -81,6 +98,9 @@
     </div>
 
 
+<!-- CHAT -->
+
+
     <button class="open-button" onclick="openForm()">Чат</button>
     <div class="chat-popup" id="myForm">
       <form action="../action_page.php" class="form-container">
@@ -91,6 +111,11 @@
         <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
+
+
+<!-- SCRIPTS -->
+
+
     <script src="/Q&A/chat.js"></script>
 </body>
 </html>

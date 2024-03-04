@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/sign/sign.css">
+    <link rel="stylesheet" href="news_main.css">
     <link rel="stylesheet" href="/style/all.css">
     <link rel="stylesheet" href="/style/chat.css">
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/header.css">
-    <title>Sign</title>
+    <title>News</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
             <button class="btn--header btn--headerLast" onclick="location='/Contacts/contacts.html'" style="cursor:pointer;">КОНТАКТЫ</button>
         </div>
         <div class="avt--block"><button class="avt" onclick="location='/sign/sign.html'" style="cursor:pointer;">Авторизация</button></div>
-</header>
+    </header>
 
 
 <!-- LOGO -->
@@ -34,54 +34,68 @@
 
     <div class="logo--block" ><img class="logo--img" onclick="location='/main/Form.html'" style="cursor:pointer;" src="/main/imgs/logotip.svg" alt="logo"></div>
 
-    
-<!-- SIGN -->
+
+<!-- NEWS_MAIN -->
 
 
-    <div class="container--flex">
-        <div class="container" id="container">
-            <div class="form-container-sign sign-up-container">
-                <form action="#">
-                    <h1 class="headline--sign">Регистрация</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span class="sign--dopText">или используйте свою учетную запись</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <a onclick="location='/lc/lc.html'" class="SignIn--SignUp">Зарегестрироваться</a>
-                </form>
+    <div class="page_name_block">
+        <div class="page_name">
+            <h1>Новости</h1>
+        </div>
+    </div>
+    <div id="news_block">
+        <div class="news" onclick="location='obmen.html'" style="cursor: pointer">
+            <div class="date">
+                <b>11 июля</b> <br>2022
             </div>
-            <div class="form-container-sign sign-in-container">
-                <form action="#">
-                    <h1 class="headline--sign">Войти</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span class="sign--dopText">или используйте свою учетную запись</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <a class="btn--a" href="#">Забыли пароль?</a>
-                    <a onclick="location='/lc/lc.html'" class="SignIn--SignUp">Войти</a>
-                </form>
+            <div class="content">
+                <b>Новые направления обмена!</b>
+                <div class="content_description">
+                    Открыты новые направления обмена 
+                </div>
             </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Добро пожаловать!</h1>
-                        <p class="sign--text">Чтобы оставаться на связи с нами, пожалуйста, войдите, используя свои личные данные.</p>
-                        <button class="ghost" id="signIn">Войти</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Добро пожаловать!</h1>
-                        <p class="sign--text">Чтобы оставаться на связи с нами, пожалуйста, войдите, используя свои личные данные.</p>
-                        <button class="ghost" id="signUp">Зарегестрироваться</button>
-                    </div>
+        </div>
+        <div class="news" onclick="location='spb.html'" style="cursor: pointer">
+            <div class="date">
+                <b>21 октября</b> <br>2021
+            </div>
+            <div class="content">
+                <b>Направление СБП добавлено на наш сервис</b>
+                <div class="content_description">
+                    Направление СБП добавлено на наш сервис 
+                </div> 
+            </div>
+        </div>
+        <div class="news" onclick="location='moshenniki.html'" style="cursor: pointer">
+            <div class="date">
+                <b>13 июля</b> <br>2021
+            </div>
+            <div class="content">
+                <b>Внимание! Мошенники!</b>
+                <div class="content_description">
+                    Будьте бдительны! 
+                </div> 
+            </div>
+        </div>
+        <div class="news" onclick="location='newyear.html'" style="cursor: pointer">
+            <div class="date">
+                <b>30 декабря</b> <br>2020
+            </div>
+            <div class="content">
+                <b>Поздравляем с новым 2021 годом!</b>
+                <div class="content_description">
+                    Поздравляем Вас с этим полшебным праздником! 
+                </div>
+            </div>
+        </div>
+        <div class="news" onclick="location='umoney.html'" style="cursor: pointer">
+            <div class="date">
+                <b>19 ноября</b> <br>2020
+            </div>
+            <div class="content">
+                <b>Открытие направления ЮMoney (Яндекс Деньги)</b>
+                <div class="content_description">
+                    Мы возобновляем работу с сервисом ЮMoney (Яндекс Деньги)!
                 </div>
             </div>
         </div>
@@ -138,8 +152,6 @@
 <!-- SCRIPTS -->
 
 
-    <script src="/chat/chat.js"></script>
-    
-    <script src="/sign/sign.js"></script>
+    <script src="/Q&A/chat.js"></script>
 </body>
 </html>

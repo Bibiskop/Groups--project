@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main/convert.css">
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="stylesheet" href="/style/chat.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/header.css">
     <title>Document</title>
 </head>
 <body>
+
+
+<!-- HEADER -->
+
 
     <header class="header">
             <!-- <div class="logo--block" onclick="location='/main/Form.html'" style="cursor:pointer;"><img class="logo--img" src="/main/imgs/logo.png" alt="logo"></div> -->
             <div class="btnHeader--block">
                 <button class="btn--header btn--headerFirst" onclick="location='/Parteri/Partneri.html'" style="cursor:pointer;">ПАРТНЁРАМ</button>
-                <button class="btn--header" onclick="location='/News/index.html'" style="cursor:pointer;">НОВОСТИ</button>
-                <button class="btn--header" onclick="location='/Q&A/idex.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
-                <button class="btn--header btn--headerLast" onclick="location='/Contacts/index.html'" style="cursor:pointer;">КОНТАКТЫ</button>
+                <button class="btn--header" onclick="location='/News/news_main.html'" style="cursor:pointer;">НОВОСТИ</button>
+                <button class="btn--header" onclick="location='/Q&A/q&a.html'" style="cursor:pointer;">ВОПРОСЫ И ОТВЕТЫ</button>
+                <button class="btn--header btn--headerLast" onclick="location='/Contacts/contacts.html'" style="cursor:pointer;">КОНТАКТЫ</button>
             </div>
             <div class="avt--block"><button class="avt" onclick="location='/sign/sign.html'" style="cursor:pointer;">Авторизация</button></div>
     </header>
 
 
+<!-- LOGO -->
+
+
         <div class="logo--block" ><img class="logo--img" onclick="location='/main/Form.html'" style="cursor:pointer;" src="/main/imgs/logotip.svg" alt="logo"></div>
+
+
+<!-- CONVENTER -->
 
 
         <div class="main">
@@ -116,6 +130,10 @@
             </div>
         </div>
 
+
+<!-- INFO -->
+
+        
         <div class="info">
             <div class="block1">
                     <img src="imgs/1.png" alt="1">
@@ -150,6 +168,8 @@
         </div>
 
 
+<!-- FOOTER -->
+
         
         <div class="footer">
             <div class="footer-left">
@@ -180,7 +200,7 @@
         </div>
 
 
-
+<!-- CHAT -->
 
 
         <button class="open-button" onclick="openForm()">Чат</button>
@@ -193,6 +213,11 @@
         <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
       </form>
     </div>
+
+
+<!-- SCRIPTS -->
+
+
     <script src="/Q&A/chat.js"></script>
     <script src="/main/dropdown.js"></script>
 </body>
